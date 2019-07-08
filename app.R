@@ -3,6 +3,7 @@ library(shinythemes)
 library(ggplot2)
 
 #Set the data
+
 lrdata <- read.csv(file = "reservoirDATA_3.csv", header = TRUE, sep = ",", dec = ".")
 data1 <-  subset(lrdata, select = c("Reservoirs",	"Age", "Year",	"Month",	"Campaigns",	
                                     "Day.of.the.year", "Depth_m", "Water.Temperature_Celsius", 
